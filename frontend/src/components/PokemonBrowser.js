@@ -1,4 +1,4 @@
-import { useDebugValue, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink, Route, useParams } from 'react-router-dom';
 import { getPokemon } from '../store/pokemon';
@@ -57,7 +57,7 @@ const PokemonBrowser = () => {
         <CreatePokemonForm hideForm={() => setShowForm(false)} />
       ) : (
         <Route path="/pokemon/:pokemonId">
-          <PokemonDetail/>
+          <PokemonDetail />
         </Route>
       )}
     </main>
